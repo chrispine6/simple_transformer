@@ -1,6 +1,5 @@
 # the most simple transformer architecture
 
----
 These files implement a minimal Transformer model with the following simplifications:
 
 Single-head attention (n_heads=1) for simplicity, though the code supports multi-head attention.
@@ -36,6 +35,4 @@ src_mask, tgt_mask = model.create_mask(src, tgt, pad_idx=0)
 
 # Forward pass
 output = model(src, tgt, src_mask, tgt_mask)
-```
-
 ```
